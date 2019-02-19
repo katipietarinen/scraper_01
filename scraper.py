@@ -1,12 +1,13 @@
 # This is a template for a Python scraper on morph.io (https://morph.io)
 # including some code snippets below that you should find helpful
-# The next line brings in Scraperwiki library for scraping pages
+# The next 2 lines bring in libraries for scraping pages
 import scraperwiki
 import lxml.html
-#
+# Print hello
 print("hello")
-# Read in a page
+# Bring in the whole page, assign it to variable html
 html = scraperwiki.scrape("http://foo.com")
+# Print to check what's there in html (the full html of the website foo.com)
 print(html)
 #
 # # Find something on the page using css selectors
